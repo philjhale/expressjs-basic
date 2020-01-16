@@ -1,0 +1,58 @@
+---
+createTime: '2020-01-16T16:05:31.053172038Z'
+description: Infra push to master
+filename: infra/cloudbuild_master_push.yaml
+github:
+  name: cloud-build-trigger-example
+  owner: philjhale
+  push:
+    branch: ^master$
+id: 4481304e-4d1c-4a00-90ce-7d355e1e0be3
+includedFiles:
+- infra/**
+name: infra-push-to-master
+tags:
+- github-default-push-trigger
+---
+createTime: '2020-01-16T16:05:27.434318011Z'
+description: Infra pull request
+filename: infra/cloudbuild_pull_request.yaml
+github:
+  installationId: '6261876'
+  name: cloud-build-trigger-example
+  owner: philjhale
+  pullRequest:
+    branch: .*
+id: f108dd21-8990-489a-bc0b-b5db4616c6f0
+includedFiles:
+- infra/**
+name: infra-pull-request
+---
+createTime: '2020-01-16T15:30:40.148096675Z'
+description: Web pull request
+filename: web/cloudbuild_pull_request.yaml
+github:
+  installationId: '6261876'
+  name: cloud-build-trigger-example
+  owner: philjhale
+  pullRequest:
+    branch: .*
+id: f6813ed6-8971-4fe9-8ff0-c0b4d99b23b6
+includedFiles:
+- web/**
+name: web-pull-request
+---
+createTime: '2020-01-16T15:23:27.845177476Z'
+description: Web push to master
+filename: web/cloudbuild_master_push.yaml
+github:
+  name: cloud-build-trigger-example
+  owner: philjhale
+  push:
+    branch: ^master$
+id: d2626ef4-a8b9-4587-8bd9-70d5afc0dc50
+includedFiles:
+- web/**
+name: web-push-to-master
+tags:
+- github-default-push-trigger
