@@ -1,0 +1,12 @@
+steps:
+- id: 'tf-init'
+  name: 'hashicorp/terraform'
+  args: ['init', '-backend-config=bucket=${PROJECT_ID}_terraform']
+
+- id: 'tf-format'
+  name: 'hashicorp/terraform'
+  args: ['fmt', '-list=true', '-write=false', '-diff=true', '-check=true', '.']
+
+- id: 'tf-validate'
+  name: 'hashicorp/terraform'
+  args: ['validate']
