@@ -1,0 +1,13 @@
+steps:
+  - name: gcr.io/cloud-builders/yarn
+    id: 'Install packages'
+    args: ['install']
+  - name: gcr.io/cloud-builders/yarn
+    id: 'Package security check'
+    dir: 'source'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        yarn global add audit-ci
+        audit-ci --report-type=full
