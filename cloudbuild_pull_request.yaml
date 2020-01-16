@@ -1,9 +1,9 @@
 steps:
-  - name: gcr.io/cloud-builders/yarn
+  - name: node
     id: 'Install packages'
-    args: ['install']
+    args: ['yarn','install']
 
-  - name: gcr.io/cloud-builders/yarn
+  - name: node
     id: 'Package security check'
     entrypoint: 'bash'
     args:
