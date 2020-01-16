@@ -7,7 +7,6 @@ github:
   owner: philjhale
   push:
     branch: ^master$
-id: 4481304e-4d1c-4a00-90ce-7d355e1e0be3
 includedFiles:
 - infra/**
 name: infra-push-to-master
@@ -23,7 +22,6 @@ github:
   owner: philjhale
   pullRequest:
     branch: .*
-id: f108dd21-8990-489a-bc0b-b5db4616c6f0
 includedFiles:
 - infra/**
 name: infra-pull-request
@@ -37,7 +35,6 @@ github:
   owner: philjhale
   pullRequest:
     branch: .*
-id: f6813ed6-8971-4fe9-8ff0-c0b4d99b23b6
 includedFiles:
 - web/**
 name: web-pull-request
@@ -50,7 +47,6 @@ github:
   owner: philjhale
   push:
     branch: ^master$
-id: d2626ef4-a8b9-4587-8bd9-70d5afc0dc50
 includedFiles:
 - web/**
 name: web-push-to-master
