@@ -2,6 +2,6 @@ variable "google_project_id" {
   type = "string"
 }
 
-variable "test" 
+variable "test" {
     type = "string"
 }
