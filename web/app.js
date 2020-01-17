@@ -25,7 +25,7 @@ app.use('/users', usersRouter);
 app.use(function (req, res, next) {
   console.log('Time:', Date.now())
   console.log('Headers:', req.headers)
-  //console.log('Req:', req)
+console.log('hello')
   next()
 });
 
